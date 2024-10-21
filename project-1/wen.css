@@ -1,0 +1,338 @@
+/* Reset CSS */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Set box sizing to border-box for all elements */
+}
+
+body, html {
+    height: 100%; /* Set height to 100% for full page layout */
+    font-family: 'Arial', sans-serif; /* Set default font */
+}
+
+.header {
+    width: 100%; /* Full width header */
+    height: 100vh; /* Full viewport height */
+    background-image: url('images/parallax1.jpg'); /* Background image for header */
+    background-size: cover; /* Cover the entire header area */
+    background-position: center; /* Center the background image */
+}
+
+.navbar {
+    display: flex; /* Flex layout for navbar links */
+    justify-content: flex-start; /* Align items to the left */
+    padding: 20px; /* Padding around navbar */
+    width: 100%; /* Full width navbar */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    position: fixed; /* Fix navbar to top */
+    top: 0; /* Align to top of the viewport */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure navbar appears above other elements */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.navbar a {
+    color: #333; /* Dark color for links */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 20px; /* Horizontal space between links */
+    font-size: 18px; /* Font size for links */
+    font-weight: 600; /* Bold font weight */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.navbar a:hover {
+    color: #fff; /* Change text color on hover */
+    background-color: #333; /* Dark background on hover */
+    padding: 10px 20px; /* Add padding on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+.logo-container {
+    display: flex; /* Flex container for logo */
+    justify-content: center; /* Center logo horizontally */
+    align-items: center; /* Center logo vertically */
+    height: 100%; /* Full height for centering */
+}
+
+.logo h1 {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white; /* White text color */
+    padding: 20px; /* Padding around logo text */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 8px; /* Space between letters */
+    font-size: 24px; /* Font size for logo text */
+}
+
+/* About Me Section */
+.about-section {
+    display: flex; /* Flex layout for about section */
+    justify-content: space-between; /* Space elements apart */
+    padding: 50px 10%; /* Padding around section */
+    background-color: #f9f9f9; /* Light background color */
+    margin-top: 100px; /* Space above section */
+}
+
+.about-content {
+    flex: 1; /* Take up equal space */
+    margin-right: 40px; /* Space between content and profile */
+}
+
+.about-content h2 {
+    font-size: 36px; /* Large heading font size */
+    font-weight: bold; /* Bold font weight */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.subheading {
+    font-style: italic; /* Italicized text */
+    color: gray; /* Gray text color */
+    margin-bottom: 20px; /* Space below subheading */
+}
+
+.about-content p {
+    line-height: 1.6; /* Increase line height for readability */
+    margin-bottom: 20px; /* Space below paragraphs */
+}
+
+.about-profile {
+    flex: 1; /* Take up equal space */
+    text-align: center; /* Center align profile content */
+}
+
+.about-profile img {
+    width: 300px; /* Set image width */
+    border-radius: 50%; /* Circular profile image */
+    margin-bottom: 20px; /* Space below image */
+}
+
+.profile-name {
+    font-weight: bold; /* Bold font weight */
+    margin-top: 10px; /* Space above name */
+    margin-bottom: 20px; /* Space below name */
+    font-size: 18px; /* Font size for name */
+}
+
+.about-profile p {
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 50px 10%; /* Padding around section */
+    background-color: #fff; /* White background */
+    text-align: center; /* Center align section text */
+}
+
+.skills-section h2 {
+    font-size: 30px; /* Heading font size */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.skill {
+    margin: 20px 0; /* Vertical space between skills */
+}
+
+.skill span {
+    font-size: 20px; /* Font size for skill name */
+    display: block; /* Display skill name as block element */
+    margin-bottom: 10px; /* Space below skill name */
+}
+
+.progress {
+    background-color: #eee; /* Light gray background for progress bar */
+    border-radius: 20px; /* Rounded corners */
+    height: 20px; /* Set progress bar height */
+    width: 100%; /* Full width of container */
+    margin: 0 auto; /* Center progress bar */
+    max-width: 600px; /* Limit max width */
+    position: relative; /* Position relative for inner bar */
+}
+
+.progress-bar {
+    background-color: #333; /* Dark background for progress bar */
+    height: 100%; /* Full height */
+    border-radius: 20px; /* Rounded corners */
+    text-align: right; /* Right align text */
+    padding-right: 10px; /* Space between text and edge */
+    line-height: 20px; /* Center text vertically */
+    color: white; /* White text color */
+    font-weight: bold; /* Bold font weight */
+}
+
+/* Achievements Section */
+.achievements-section {
+    display: flex; /* Flex layout for achievements */
+    justify-content: space-around; /* Space achievements evenly */
+    background-color: #333; /* Dark background */
+    color: white; /* White text color */
+    padding: 50px 10%; /* Padding around section */
+    text-align: center; /* Center align text */
+}
+
+.achievement h3 {
+    font-size: 40px; /* Large font size for numbers */
+    margin-bottom: 10px; /* Space below number */
+}
+
+.achievement p {
+    font-size: 20px; /* Font size for description */
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 50px 10%; /* Padding around section */
+    text-align: center; /* Center align text */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.portfolio-section h2 {
+    font-size: 30px; /* Heading font size */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.portfolio-section p {
+    color: gray; /* Gray text color */
+    margin-bottom: 30px; /* Space below description */
+    font-style: italic; /* Italicized text */
+}
+
+.portfolio-gallery {
+    display: grid; /* Grid layout for portfolio items */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid columns */
+    gap: 20px; /* Space between grid items */
+    max-width: 1200px; /* Limit max width of grid */
+    margin: 0 auto; /* Center grid within container */
+}
+
+.portfolio-item img {
+    width: 100%; /* Full width for images */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+/* Contact Section */
+.contact-section {
+    padding: 50px 10%; /* Padding around section */
+    background-color: #fff; /* White background color */
+    text-align: center; /* Center align section text */
+}
+
+.contact-section h2 {
+    font-size: 30px; /* Heading font size */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.contact-container {
+    display: flex; /* Flex layout for contact container */
+    justify-content: space-between; /* Space items apart */
+    align-items: center; /* Center align items vertically */
+    margin-top: 30px; /* Space above container */
+}
+
+.contact-info {
+    flex: 1; /* Take up equal space */
+    margin-right: 20px; /* Space between info and form */
+    text-align: left; /* Left align text */
+}
+
+.contact-info h3 {
+    font-size: 24px; /* Subheading font size */
+    margin-bottom: 10px; /* Space below subheading */
+}
+
+.contact-info img {
+    width: 100%; /* Full width image */
+    max-width: 300px; /* Set max width for image */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below image */
+}
+
+.contact-info p {
+    line-height: 1.6; /* Increase line height for readability */
+    margin: 10px 0; /* Vertical space between paragraphs */
+}
+
+.contact-info i {
+    color: #333; /* Dark color for icons */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.contact-form {
+    flex: 1; /* Take up equal space */
+}
+
+.contact-form form {
+    display: flex; /* Flex layout for form */
+    flex-direction: column; /* Stack form elements */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Input font size */
+}
+
+.contact-form textarea {
+    height: 100px; /* Set height for textarea */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-form button {
+    padding: 10px 20px; /* Padding around button */
+    font-size: 18px; /* Button font size */
+    color: white; /* White text color */
+    background-color: #333; /* Dark background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.contact-form button:hover {
+    background-color: #555; /* Lighter background on hover */
+}
+/* Footer Section */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Padding around footer */
+    position: relative; /* Position relative to place it at bottom */
+    width: 100%; /* Full width */
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Small font size */
+}
+
+.footer a {
+    color: white; /* White links */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Space between links */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.social-icons {
+    margin-top: 10px; /* Space above social icons */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Space between icons */
+    font-size: 20px; /* Icon size */
+    color: white; /* White icon color */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social-icons a:hover {
+    color: #ffcc00; /* Yellow color on hover */
+}
